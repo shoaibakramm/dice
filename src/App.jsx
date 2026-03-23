@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import Dice from './Dice';
+
 
 function App() {
   
@@ -42,15 +44,9 @@ function App() {
     <div className='container'>
       <h1> {title_text} </h1>
 
-      <div className='dice'>
-        <p>Player 1</p>
-        <img className='img1' src={`/dice${dice1}.png`} onClick={rollDice}  style={{ cursor: 'pointer' }} />
-      </div>
+      <Dice  playerNumber={1} diceNumber={dice1} onRoll={rollDice}  />
+      <Dice  playerNumber={2} diceNumber={dice2} onRoll={rollDice}  />
 
-      <div className='dice'>
-        <p>Player 2</p>
-        <img className='img2' src={`/dice${dice2}.png`} onClick={rollDice}  style={{ cursor: 'pointer' }} />
-      </div>
 
       <footer>
         MADE by Shoaib Akram
