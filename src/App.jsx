@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Dice from './Dice';
+import Footer from './Footer'
 
 
 function App() {
@@ -46,12 +47,9 @@ function App() {
 
       <Dice  playerNumber={1} diceNumber={dice1} onRoll={rollDice}  />
       <Dice  playerNumber={2} diceNumber={dice2} onRoll={rollDice}  />
-
-
-      <footer>
-        MADE by Shoaib Akram
-      </footer>
+      <Footer />
     
+
     </div>
   );
 
